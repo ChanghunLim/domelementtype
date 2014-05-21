@@ -1,5 +1,8 @@
+define([], function () {
+    
 //Types of elements found in the DOM
-module.exports = {
+//module.exports = {
+return {
 	Text: "text", //Text
 	Directive: "directive", //<? ... ?>
 	Comment: "comment", //<!-- ... -->
@@ -12,3 +15,5 @@ module.exports = {
 		return elem.type === "tag" || elem.type === "script" || elem.type === "style";
 	}
 };
+    
+});
